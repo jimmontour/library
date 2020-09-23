@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.top-container {
+    background-color: rosybrown;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container input, label, button{
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+}
+
+.library {
+    background-color: tan;
+    display: grid;
+    width: 100%;
+    min-height: 600px;
+}
