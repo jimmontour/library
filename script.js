@@ -1,28 +1,56 @@
-let myLibrary = [];
+// example books (delete later)
+const example1 = {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    pages: 423
+}
 
-function Book() {
-    // the constructor
+const example2 = {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    pages: 423
+}
+
+const example3 = {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    pages: 423
+}
+
+
+let myLibrary = [example1, example2, example3];
+
+function Book(title, author, pages) {
+    this.title = title,
+    this.author = author,
+    this.pages = pages
 };
 
-function addBookToLibrary() {
-    // do stuff here
+function addBookToLibrary(book) {
 }
 
 // make a functional form with event listeners and query selectors
-let newTitle = document.querySelector('#title').value;
-let newAuthor = document.querySelector('#author').value;
-let newPages = document.querySelector('#pages').value;
 
 const submit = document.querySelector('#submit-button')
 
 // when submit is clicked
-submit.addEventListener('click', function(e) {
 
+submit.addEventListener('click', function(e) {
+    let newTitle = document.querySelector('#title').value;
+    let newAuthor = document.querySelector('#author').value;
+    let newPages = document.querySelector('#pages').value;
+
+    createdBook = new Book(newTitle, newAuthor, newPages);
+    console.log(createdBook);
+
+    myLibrary.push(createdBook);
+    console.log(myLibrary);
 });
 
-
-// the title, author and pages field values are recorded
-// these values are put together as a new object from the object constructor
-// this new object is then added to the myLibrary array
 // the myLibrary array is shown on the page with the new book
+
+
+// Testing
+console.log(myLibrary)
+
 
