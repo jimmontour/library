@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Library</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>Library</title>
 </head>
+
 <body>
-    <div class="top-container">
-        <h2>Add a book to your library:</h2>
-   
-        <label for="title">Title</label>
-        <input type="text" id="title" name="title">
+     <div class="submit-book">
+          <label for="=submission-title">Title:</label>
+          <input type="text" id="submission-title">
+          <label for="submission-author">Author</label>
+          <input type="text" id="submission-author">
+          <label for="read" id="submission-read"></label>
+          <input type="checkbox" id="submission-read">
+          <button type="submit" id="submit-book">Add Book</button>
+     </div>
+     <div class="library">
 
-        <label for="author">Author</label>
-        <input type="text" id="author" name="author">
-
-        <label for="ages">Pages</label>
-        <input type="text" id="pages" name="pages">
-
-        <button type="submit" id="submit-button">Submit</button>
-    </div>
-    <div class="library">
-
-    </div>
-
-
-
-    <script src="script.js"></script>
+     </div>
+     <footer>
+          Created by Jim Montour for <a href="https://www.theodinproject.com/">The Odin Project</a>. View code on <a
+               href="https://github.com/jimmontour/library">Github</a>.
+     </footer>
+     <script src="main.js"></script>
 </body>
+
 </html>
