@@ -4,23 +4,65 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
      <link rel="stylesheet" href="style.css">
-     <title>Library</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&display=swap"
+          rel="stylesheet">
+     <script src="https://kit.fontawesome.com/c84d0e080d.js" crossorigin="anonymous"></script>
+     <title>Library App</title>
 </head>
 
 <body>
-     <div class="submit-book">
-          <label for="=submission-title">Title:</label>
-          <input type="text" id="submission-title">
-          <label for="submission-author">Author</label>
-          <input type="text" id="submission-author">
-          <label for="read" id="submission-read"></label>
-          <input type="checkbox" id="submission-read">
-          <button type="submit" id="submit-book">Add Book</button>
-     </div>
-     <div class="library">
+     <header>
+          <i class="fas fa-book logo"></i>
+          <h1>Library App</h1>
+     </header>
+     <main>
+          <div class="submit-book">
+               <h2>Add A New Book</h2>
+               <form action="">
+                    <input type="text" id="submission-title" placeholder="Title">
+                    <input type="text" id="submission-author" placeholder="Author">
+                    <div class="secondary-submission-info">
+                         <input type="number" id="submission-pages" placeholder="Pages">
+                         <div class="read-box">
+                              <div class="read-submission">Read</div>
+                              <div class="not-read-submission">Not Read</div>
+                         </div>
+                    </div>
+                    <div class="rating-system">
+                         <i class="far fa-star one-star"></i>
+                         <i class="far fa-star two-star"></i>
+                         <i class="far fa-star three-star"></i>
+                         <i class="far fa-star four-star"></i>
+                         <i class="far fa-star five-star"></i>
+                    </div>
+                    <button type="submit" id="submit-book">Add Book</button>
+               </form>
+          </div>
+          <div class="library">
+               <div class="book">
+                    <h3 class="book-title">Lord of the Rings</h3>
+                    <p class="author-title">By J.R.R. Tolkien</p>
+                    <p class="pages-title">465 pages</p>
+                    <p class="book-rating">5/5</p>
 
-     </div>
+
+               </div>
+               <div class="book">
+                    <h3 class="book-title">Dune</h3>
+                    <p class="author-title">By Frank Herbert</p>
+                    <p class="pages-title">753 pages</p>
+                    <p class="book-rating">5/5</p>
+               </div>
+               <div class="book">
+                    <h3 class="book-title">War and Peace</h3>
+                    <p class="author-title">By Leo Tolstoy</p>
+                    <p class="pages-title">1225 pages</p>
+                    <p class="book-rating">5/5</p>
+               </div>
+     </main>
      <footer>
           Created by Jim Montour for <a href="https://www.theodinproject.com/">The Odin Project</a>. View code on <a
                href="https://github.com/jimmontour/library">Github</a>.
