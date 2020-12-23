@@ -1,3 +1,7 @@
 import addBook from './modules/addBook';
+import library from './modules/library';
+import printLibrary from './modules/printLibrary';
 
-addBook();
+const init = (function () {
+  addBook();
+})();
