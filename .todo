@@ -1,0 +1,12 @@
+☐ add regex validation to addBook
+☐ add divs for author and pages for printBook
+☐ add button on top right to delete book from library
+☐ add functionality to removeBook
+☐ add rating functionality
+☐ add read/not read functionality
+☐ add login section
+☐ set up back end on either live server or firebase
+☐ have a regex validation when logging in
+☐ add responsive design
+☐ fix the 'add a new book' section so it looks cleaner
+☐ add background image of book based on title of the book
