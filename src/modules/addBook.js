@@ -1,13 +1,11 @@
 import library from './library';
+import printLibrary from './printLibrary';
 
 const addBook = () => {
   // DOM Cache:
-  const submissionForm = document.querySelector('.submit-book');
   const submissionTitle = document.querySelector('#submission-title');
   const submissionAuthor = document.querySelector('#submission-author');
   const submissionPages = document.querySelector('#submission-pages');
-  const submissionRead = document.querySelector('.read-submission');
-  const submissionNotRead = document.querySelector('.not-read-submission');
   const submitBtn = document.querySelector('#submit-book');
 
   //   Book Factory:
@@ -15,14 +13,14 @@ const addBook = () => {
     return { title, author, pages };
   };
   // Event Delegation:
-  submitBtn.addEventListener('click', (e) => {
+  submitBtn.addEventListener('click', () => {
     const newBook = BookFactory(
       submissionTitle.value,
       submissionAuthor.value,
       submissionPages.value
     );
     library.push(newBook);
-    console.log(library);
+    printLibrary();
   });
 };
 

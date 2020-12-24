@@ -4,4 +4,5 @@ import printLibrary from './modules/printLibrary';
 
 const init = (function () {
   addBook();
+  printLibrary();
 })();
